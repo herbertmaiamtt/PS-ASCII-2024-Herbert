@@ -8,6 +8,7 @@
 body{
     background-color: #e5e5e5;
     margin: 0;
+    overflow-x: hidden;
 }
 
 header{
@@ -15,6 +16,7 @@ header{
     height: 100px;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 #header-primary-part{
@@ -91,19 +93,17 @@ main{
     align-items: center;
 }
 
-figure{
+#main-banner{
     margin: 0;
     padding: 0;
 }
 
-figure img{
-    max-width:1500px;
-    max-height:1500px;
-    width: auto;
-    height: auto;
-}
-
-
+    #main-banner-image{
+        max-width:1500px;
+        max-height:1500px;
+        width: auto;
+        height: auto;
+    }
 
 .container-grid{
     display: grid;
@@ -116,40 +116,150 @@ figure img{
     margin-bottom: 50px;
 }
 
-.filho-grid-01{
-    grid-area: anuncio01;
-    background-color: #91a3b0;
+    .filho-grid-01{
+        grid-area: anuncio01;
+        background-color: #91a3b0;
+    }
+
+    .filho-grid-02{
+        grid-area: anuncio02;
+        background-color: #91a3b0;
+    }
+
+    .filho-grid-03{
+        grid-area: anuncio03;
+        background-color: #91a3b0;
+    }
+
+    .filho-grid-04{
+        grid-area: anuncio04;
+        background-color: #91a3b0;
+    }
+
+    .filho-grid-05{
+        grid-area: anuncio05;
+        background-color: #91a3b0;
+    }
+
+    .filho-grid-06{
+        grid-area: anuncio06;
+        background-color: #91a3b0;
+    }
+
+
+#secundary-banner{
+    width: 100vw;
 }
 
-.filho-grid-02{
-    grid-area: anuncio02;
-    background-color: #91a3b0;
-}
+    #secundary-banner-image{
+        width: 100vw;
+        height: 500px;
+        object-fit: cover;
+        margin-bottom: 50px;
+    }
 
-.filho-grid-03{
-    grid-area: anuncio03;
-    background-color: #91a3b0;
-}
-
-.filho-grid-04{
-    grid-area: anuncio04;
-    background-color: #91a3b0;
-}
-
-.filho-grid-05{
-    grid-area: anuncio05;
-    background-color: #91a3b0;
-}
-
-.filho-grid-06{
-    grid-area: anuncio06;
-    background-color: #91a3b0;
-}
-
-.banner-02{
-    width: 100%;
-    overflow-x: visible;
-    height: 400px;
-    object-fit: cover;
+.secundary-container-grid{
+    display: grid;
+    grid-template-columns: 750px 750px;
+    grid-template-rows: 500px 500px;
+    grid-template-areas: "card01 card02"
+                         "card03 card04";
     margin-bottom: 50px;
+}
+
+    .secundary-child-grid-01{
+        grid-area: card01;
+        background-color: #91a3b0;
+        width: 750px;
+        height: 500px;
+        border-bottom: 1px solid #e5e5e5;
+        border-right: 1px solid #e5e5e5;
+        /*Referente a centralização do texto na imagem*/
+        position: relative;
+        display: inline-block;
+    }
+        #cozy-image{
+            width: 750px;
+            height: auto;
+            /*Referente a centralização do texto na imagem*/
+            display: block; 
+        }
+        .image-text{
+            font-size: 60px;
+            font-weight: bolder;
+            color: white;
+            font-family: CenturyGothicPaneuropeanRegular;
+            /*Referente a centralização do texto na imagem*/
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+            .image-text:hover{
+                color:#baecf0;
+                text-shadow: #6afffd 1px 0 10px;
+                transition: 0.3s;
+            }
+
+    .secundary-child-grid-02{
+        grid-area: card02;
+        background-color: #91a3b0;
+        width: 750px;
+        height: 500px;
+        border-left: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+        /*Referente a centralização do texto na imagem*/
+        position: relative;
+        display: inline-block;
+    }
+        #performance-image{
+            width: 750px;
+            height: auto;
+            /*Referente a centralização do texto na imagem*/
+            display: block;
+        }
+
+    .secundary-child-grid-03{
+        grid-area: card03;
+        background-color: #91a3b0;
+        width: 750px;
+        height: 500px;
+        border-top: 1px solid #e5e5e5;
+        border-right: 1px solid #e5e5e5;
+        /*Referente a centralização do texto na imagem*/
+        position: relative;
+        display: inline-block;
+    }
+        #outdoor-image{
+            width: 750px;
+            height: auto;
+            /*Referente a centralização do texto na imagem*/
+            display: block;
+        }
+
+    .secundary-child-grid-04{
+        grid-area: card04;
+        background-color: #91a3b0;
+        width: 750px;
+        height: 500px;
+        border-top: 1px solid #e5e5e5;
+        border-left: 1px solid #e5e5e5;
+        /*Referente a centralização do texto na imagem*/
+        position: relative;
+        display: inline-block;
+    }
+        #legging-image{
+            width: 750px;
+            height: 500px;
+            object-fit: cover;
+        }
+
+.fengari-text-banner{
+    font-family: CenturyGothicPaneuropeanRegular;
+    font-weight: bolder;
+    font-size: 100px;
+    color:#e5e5e5;
+    position: absolute;
+    top: 2500px;
 }
