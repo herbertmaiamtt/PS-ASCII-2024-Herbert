@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Fengari - Adicionar comprar</title>
+</head>
+
+<body>
+    <!--CABEÇALHO-->
+    <header id="cabecalho">
+        <!--
+        Parte principal do cabeçalho.
+        Contém logo, links de navegação e barra de pesquisa
+        -->
+        <div id="parte-principal-cabecalho">
+            <!--Logo-->
+            <div id="logo-fengari-div">
+                <img src="../imagens/fengari-logo-nm.png" alt="Logo da marca Fengari" id="logo-fengari">
+            </div>
+            <!--Links de navegação-->
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="/../../valores/valores.html">Sobre nós</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <!--Barra de pesquisa-->
+            <div class="div-maior-pesquisa">
+                <div class="div-menor-pesquisa">
+                    <form class="form-pesquisa">
+                        <input placeholder="Pesquisar">
+                        <button>
+                            <img src="../imagens/icons/icon-lupa.png">
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <form action="#" method="post" id="formulario">
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado" required><br><br>
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" required><br><br>
+
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro" required><br><br>
+
+                <label for="rua">Rua:</label>
+                <input type="text" id="rua" name="rua" required><br><br>
+
+                <label for="numero">Número:</label>
+                <input type="text" id="numero" name="numero" required><br><br>
+
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" required><br><br>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required><br><br>
+            </form>
+            <a href="../index.html">
+                <button>FINALIZAR COMPRA</button>
+            </a>
+        </article>
+    </main>
+
+    <footer>
+        <!--Parte superior do rodapé-->
+        <section class="top-container-footer">
+            <ul>
+                <li><a href="#" class="summer-link">Verão</a></li>
+                <li><a href="#" class="spring-link">Primavera</a></li>
+                <li><a href="#" class="autumn-link">Outono</a></li>
+                <li><a href="#" class="winter-link">Inverno</a></li>
+            </ul>
+        </section>
+        <!--Parte inferior do rodapé-->
+        <section class="bottom-container-footer">
+            <!--Serviço ao cliente-->
+            <div class="footer-section">
+                <h4>Serviço ao cliente</h4>
+                <ul>
+                    <li><a href="#">Informações de envio</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Política de devolução</a></li>
+                    <li><a href="#">Suporte ao cliente</a></li>
+                </ul>
+            </div>
+            <!--Informações legais-->
+            <div class="footer-section">
+                <h4>Informações legais</h4>
+                <ul>
+                    <li><a href="#">Política de Cookies</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                </ul>
+            </div>
+            <!--Contato-->
+            <div class="footer-address-table">
+                <h4 id="contato">Contato</h4>
+                <!--Utiliza tabela para organização do ícone com o respectivo link-->
+                <table>
+                    <tr>
+                        <td><a href="#"><img src="../imagens/icons/icon-instagram.png"></a></td>
+                        <td><a href="#" class="link-contato">
+                                <address>fengari.store</address>
+                            </a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#"><img src="../imagens/icons/icon-telefone.png"></a></td>
+                        <td><a href="#" class="link-contato">
+                                <address>(00) 99955-6060</address>
+                            </a></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <div class="direitos-reservados">
+            <i>© 2024 Lojas Fengari. Todos os direitos reservados</i>
+        </div>
+    </footer>
+</body>
+
+</html>
